@@ -1,1 +1,1 @@
-View the site at <nssr-media-lab.github.io/pages>
+View the site at <https://nssr-media-lab.github.io/pages>
