@@ -10,14 +10,31 @@ NEWSTICKER PROTOTYPE
   NEWSTICKER PROTOTYPE
   </h1>
   
+  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group1.png">
+  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group2.png">
+  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group3.png">
+  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group4.png">
+  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group5.png">
+  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group6.png">
   
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/icons.png">
-  <img class="ticker" src="">
-  <img class="ticker" src="">
-  <img class="ticker" src="">
-  <img class="ticker" src="">
-  <img class="ticker" src="">
-  
+  <script>
+    
+    var slide = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("ticker");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slide++;
+      if (slide > x.length) {slide = 1}
+      x[slide-1].style.display = "block";
+      setTimeout(carousel, 2000);
+    }
+    
+  </script>
   
 </body>
 
