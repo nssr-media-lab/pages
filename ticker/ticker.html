@@ -10,31 +10,34 @@ NEWSTICKER PROTOTYPE
   NEWSTICKER PROTOTYPE
   </h1>
   
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group1.png" style="width:50%">
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group2.png" style="width:50%">
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group3.png" style="width:50%">
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group4.png" style="width:50%">
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group5.png" style="width:50%">
-  <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group6.png" style="width:50%">
   
-  <script>
+  <div id="newsticker">
+    <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group1.png" style="width:50%">
+    <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group2.png" style="width:50%">
+    <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group3.png" style="width:50%">
+    <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group4.png" style="width:50%">
+    <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group5.png" style="width:50%">
+    <img class="ticker" src="https://nssr-media-lab.github.io/pages/ticker/Group6.png" style="width:50%">
+  
+    <script>
     
-    var slide = 0;
-    carousel();
+      var slide = 0;
+      carousel();
     
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("ticker");
-      for (i = 0; i < x.length; i++) {
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("ticker");
+        for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
+        }
+        slide++;
+        if (slide > x.length) {slide = 1}
+        x[slide-1].style.display = "block";
+        setTimeout(carousel, 3000);
       }
-      slide++;
-      if (slide > x.length) {slide = 1}
-      x[slide-1].style.display = "block";
-      setTimeout(carousel, 2000);
-    }
     
-  </script>
+    </script>
+  </div><!-- end of newsticker -->
   
 </body>
 
