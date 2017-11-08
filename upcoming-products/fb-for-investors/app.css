@@ -9,7 +9,7 @@ body {
 }
 
 div#twocolumns {
-	width: 85%;
+	width: 95%;
 	min-width: 900px;
 	margin: auto;
 	font-size: 20px;
@@ -35,7 +35,7 @@ div#main {
 	border: solid 1px #dedede;
 	border-radius: 3px;
 	padding: 48px;
-	width: 60%;
+	width: 65%;
 	float: left;
 }
 
@@ -46,7 +46,5 @@ div#text {
 
 div#img {
 	font-size: 16px;
-	padding-left: 40px;
-	padding-right: 40px;
 	text-align: center;
 }
