@@ -67,3 +67,7 @@ Array.from(document.getElementsByClassName('leader-profile')).forEach(el => {
     document.querySelector(`.leader-bio[data-name=${el.dataset.name}]`).style.display = 'block';
   });
 });
+
+document.getElementById('meet-the-team').addEventListener('click', () => {
+  teamEl.style.display = 'block';
+});
