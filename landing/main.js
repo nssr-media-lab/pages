@@ -20,16 +20,16 @@ function makeRow(type) {
     for (var i=0; i<TYPES[type].per_row; i++) {
       var img = document.createElement('img');
       img.style.width = `${100/TYPES[type].per_row}%`;
-      img.src = './assets/default_hex.png';
+      img.src = '/assets/default_hex.png';
       if (type == 'employee') {
         var w = Math.random(),
             m = Math.random();
         if (w < P_WOMEN && m < P_MINOR) {
-          img.src = './assets/filled_blue_hex.png';
+          img.src = '/assets/filled_blue_hex.png';
         } else if (w < P_WOMEN) {
-          img.src = './assets/filled_hex.png';
+          img.src = '/assets/filled_hex.png';
         } else if (m < P_MINOR) {
-          img.src = './assets/blue_hex.png';
+          img.src = '/assets/blue_hex.png';
         }
       }
       row.appendChild(img);
