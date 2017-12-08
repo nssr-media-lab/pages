@@ -4,7 +4,7 @@ const teamEl = document.getElementById('the-team');
 const TYPES = {
   employee: {
     per_row: 20,
-    max_n: 18000,
+    max_n: 25000,
     shown: 0
   },
   contractor: {

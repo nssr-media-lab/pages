@@ -22,7 +22,7 @@ img {
   width: 160px;
 }
 .icon-arrows img:hover {
-  animation: bounceIn 0.5s infinite;
+  animation: bounceIn 0.7s infinite;
 }
 .icon-arrows img#hive {
   top: -60px;
