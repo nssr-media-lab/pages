@@ -73,7 +73,7 @@ NEWSTICKER DEMO
         }
         slide++;
         if (slide > x.length) {slide = 1}
-        x[slide-1].style.display = "block";
+        x[Math.floor(Math.random()*x.length)].style.display = “block”;
         setTimeout(carousel, 3000);
       }
     
