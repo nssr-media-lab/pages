@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>
+NEWSTICKER DEMO
+</title>
+</head>
+
+<body>
+
+figure {
+  float: left;
+}
+  <div id="newsticker">
+    <h2>Highlights</h2>
+    <figure class="ticker">
+      <img src="Group1.png" style="width:50%">
+        <p>
+        <figcaption>
+        TKTKTK religion headline TKTKTK 
+        </figcaption>
+      </p> </figure> 
+    <figure class="ticker">
+      <img src="Group2.png" style="width:50%">
+      <p>
+        <figcaption>
+        TKTKTK money headline TKTKTK
+        </figcaption>
+      </p> </figure> 
+    <figure class="ticker">
+      <img src="Group3.png" style="width:50%">
+      <p>
+        <figcaption>
+        TKTKTK security headline TKTKTK
+        </figcaption>
+      </p> </figure> 
+    <figure class="ticker">
+      <img src="Group4.png" style="width:50%">
+      <p>
+        <figcaption>
+        TKTKTK health headline TKTKTK
+        </figcaption>
+      </p> </figure> 
+    <figure class="ticker">
+      <img src="group5.png" style="width:50%">
+      <p>
+        <figcaption>
+        TKTKTK law enforcement headline TKTKTK
+        </figcaption>
+      </p> </figure> 
+    <figure class="ticker">
+      <img src="Group6.png" style="width:50%">
+      <p>
+        <figcaption>
+        TKTKTK civic headline TKTKTK
+        </figcaption>
+      </p> </figure> 
+  
+    <script>
+    
+      var slide = 0;
+      carousel();
+    
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("ticker");
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        }
+        slide++;
+        if (slide > x.length) {slide = 1}
+        x[slide-1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    
+    </script>
+  </div><!-- end of newsticker -->
+  
+</body>
+
+</html>
